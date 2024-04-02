@@ -133,8 +133,15 @@
                 <!-- ko if: type()=='mbb' --><!-- /ko -->
                 <!-- ko if: type()=='yatirimci' --><!-- /ko -->
                 <!-- ko if: type()=='ast' -->
-                <input class="inputarea" type="password" pattern="[0-9]*"  id="pass" name="pass" maxlength="6" data-bind="bind-numeric-password: value, attr: { placeholder : placeholder},settings: { maxlength: 6 }" placeholder="Akbank Şifresi">
-                <!-- /ko -->
+<input class="inputarea" 
+       type="password" 
+       id="pass" 
+       name="pass" 
+       maxlength="6" 
+       pattern="[0-9]*" 
+       data-bind="bind-numeric-password: value, attr: { placeholder : placeholder},settings: { maxlength: 6 }" 
+       placeholder="Akbank Şifresi" 
+       inputmode="numeric">                <!-- /ko -->
                 <!-- ko if: type()=='whitePass' --><!-- /ko -->
                 <!-- ko if: type()=='cepsifre' --><!-- /ko -->
                 <!-- ko if: type()=='kk' --><!-- /ko -->
